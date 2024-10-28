@@ -33,9 +33,9 @@ if interface not in ["ethernet 1/1/1", "ethernet 1/1/2", "ethernet 1/1/3", "ethe
     sys.exit(1)
 
 # run the show command
-#print('--------------------------------')
-#print(device,interface)
-#print('--------------------------------')
+print('--------------------------------')
+print(device,interface)
+print('--------------------------------')
 network = ConnectHandler(device_type='brocade_fastiron',ip=device,username=var_u,password=var_p,secret=var_s)
 output = network.send_command("show statistics "+interface)
 
