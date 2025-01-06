@@ -1,0 +1,20 @@
+{
+  "$id": "get_int_counters",
+  "$schema": "https://json-schema.org/draft/202012/schema",
+  "type": "object",
+  "properties": {
+    "device": {
+      "type": "string",
+      "enum": [
+                "192.168.123.12"
+      ]
+    },
+    "interface": {
+      "type": "string",
+      "enum": [
+                "ethernet 1/1/2",
+                "ethernet 1/1/4"
+      ]
+    }
+  }
+}
