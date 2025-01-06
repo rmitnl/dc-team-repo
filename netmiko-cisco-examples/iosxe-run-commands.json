@@ -1,0 +1,24 @@
+{
+    "$id": "iosxe-run-commands",
+    "$schema": "https://json-schema.org/draft/202012/schema",
+    "type": "object",
+    "properties": {
+      "commands": {
+        "type": "array",
+        "items": {
+            "type": "string",
+            "enum": [
+                "show version",
+                "show ip route",
+                "show ip int br",
+                "show ip ospf database",
+                "show ip ospf neighbor",
+                "show access-lists",
+                "show cdp neighbors",
+                "show ntp associations",
+                "show controllers"
+            ]
+        }
+      }
+    }
+  }
