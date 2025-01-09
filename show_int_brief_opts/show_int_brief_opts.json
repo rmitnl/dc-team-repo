@@ -1,0 +1,24 @@
+{
+  "$id": "show_int_brief_opts",
+  "$schema": "https://json-schema.org/draft/202012/schema",
+  "type": "object",
+  "properties": {
+    "device": {
+      "type": "string",
+      "title": "Select the network device:",
+      "enum": [
+                "192.168.123.12",
+                "192.168.123.6"
+      ]
+    },
+    "output": {
+      "type": "string",
+      "title": "Select the port status to view:",
+      "enum": [
+                "up",
+                "down",
+                "all"
+      ]
+    }
+  }
+}
