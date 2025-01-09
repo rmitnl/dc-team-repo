@@ -7,17 +7,18 @@ if len(sys.argv) != 2:
     print('1 arg required (description)')
     sys.exit(1)
 
+# verify arg(s)
 name = sys.argv[1]
 if name[0:6] != "--name":
     print('name not set')
     sys.exit(1)
 
-# extract data from arg
+# extract data from arg(s)
 name = name[7:]
 name = name.strip('\"')
 name = name.replace(" ", "_")
 
-# run the show command
+# run the commands
 device = {
     "device_type": "brocade_fastiron",
     "host": "192.168.123.12",
