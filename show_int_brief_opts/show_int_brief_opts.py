@@ -41,20 +41,16 @@ if output == "all":
     print(rtrout)
 
 if output == "up":
-    i = 0
     for line in rtrout.splitlines():
-        if i == 0:
+        if "Port" in line[0:4]: 
             print(line)
-            i = i + 1
         if "Up" in line[0:13]:
             print(line)
 
 if output == "down":
-    i = 0
     for line in rtrout.splitlines():
-        if i == 0:
+        if "Port" in line[0:4]: 
             print(line)
-            i = i + 1
         if "Down" in line[0:13]:
             print(line)
 
