@@ -51,7 +51,7 @@ if output == "down":
     for line in rtrout.splitlines():
         if "Port" in line[0:4]: 
             print(line)
-        if "Down" in line[0:13]:
+        if "Down" in line[0:16]:
             print(line)
 
 network.disconnect()
