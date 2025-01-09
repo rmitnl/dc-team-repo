@@ -6,13 +6,15 @@
     "device": {
       "type": "string",
       "enum": [
-                "192.168.123.12"
+                "192.168.123.12",
+                "192.168.123.13"
       ]
     },
     "interface": {
       "type": "string",
       "enum": [
                 "ethernet 1/1/2",
+                "ethernet 1/1/3",
                 "ethernet 1/1/4"
       ]
     }
