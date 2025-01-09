@@ -25,11 +25,11 @@ interface = interface[12:]
 interface = interface.strip('\"')
 
 if device not in ["192.168.123.12", "192.168.123.13"]:
-    print('Invalid device ip')
+    print('Invalid device ip - not in list.')
     sys.exit(1)
 
 if interface not in ["ethernet 1/1/1", "ethernet 1/1/2", "ethernet 1/1/3", "ethernet 1/1/4"]:
-    print('Invalid interface name')
+    print('Invalid interface name - not in list.')
     sys.exit(1)
 
 # run the show command
