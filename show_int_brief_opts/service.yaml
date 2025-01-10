@@ -1,0 +1,9 @@
+services:
+    - name: show_int_brief_opts
+      type: python-script
+      description: "show device ints with output selection"
+      filename: show_int_brief_opts.py
+      working-directory: show_int_brief_opts
+      repository: dc-git-repo
+      decorator: show_int_brief_opts
+
