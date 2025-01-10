@@ -33,7 +33,7 @@ if output not in ["up", "down", "all"]:
     sys.exit(1)
 
 # run the show command
-print('Version 1.0')
+print('Version 1.1')
 network = ConnectHandler(device_type='brocade_fastiron',ip=device,username=var_u,password=var_p,secret=var_s)
 rtrout = network.send_command("show int brief ")
 
