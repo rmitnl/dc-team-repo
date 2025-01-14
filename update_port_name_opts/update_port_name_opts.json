@@ -1,12 +1,12 @@
 {
-  "$id": "update_port_name",
+  "$id": "update_port_name_opts",
   "$schema": "https://json-schema.org/draft/202012/schema",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
       "title": "Enter new port name/description"
-    }
+    },
     "host": {
       "type": "string",
       "title": "Router to update:",
@@ -14,7 +14,7 @@
                 "192.168.123.12",
                 "192.168.123.13"
       ]
-    }
+    },
     "interface": {
       "type": "string",
       "title": "Interface to update:",
@@ -34,8 +34,7 @@
                 "ethernet 1/2/1",
                 "ethernet 1/2/2",
                 "ethernet 1/3/1",
-                "ethernet 1/3/2",
-                "mgmt1"
+                "ethernet 1/3/2"
       ]
     }
   }
