@@ -11,6 +11,6 @@ for macs in output.splitlines():
         if tokens[0] not in ["MAC-Address","Total"]:
             print(tokens[0],tokens[1],tokens[4])
 print('--------------------------------')
-print('Version 1.0')
+print('Version 2.0')
 print('--------------------------------')
 network.disconnect()
